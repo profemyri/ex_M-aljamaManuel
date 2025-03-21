@@ -5,29 +5,29 @@
     <title>Freiduría online</title>
     <link rel="stylesheet" href="ex_html-css-js.css">
 </head>
-<body>
+<body class="claro">
     <h1> “¡¡Pide aquí tu rico pescaíto!!”</h1>
     <img src="C:\Users\manue\github-classroom\profemyri\ex_M-aljamaManuel\pescado_frito.jpg" alt="Bandeja de pescado frito">
 
     <form id="formulario">
         <h2>Datos del cliente: </h2>
         <label for="nombre">Nombre</label>
-        <input name="nombre" type="text" placeholder="Escribe aqui..." required>
+        <input name="nombre" id="nombre" type="text" placeholder="Escribe aqui..." >
         <br>
         <label for="apellidos">Apellidos</label>
-        <input name="apellidos" type="text" placeholder="Escribe aqui..." required>
+        <input name="apellidos" id="apellidos" type="text" placeholder="Escribe aqui..." >
         <br>
         <label for="email">Email</label>
-        <input name="email" type="email" placeholder="Escribe aqui..." required>
+        <input name="email" id="email" type="email" placeholder="Escribe aqui..." >
         <br>
         <label for="direccion">Direccion</label>
-        <input name="direccion" type="text" placeholder="Escribe aqui..." required minlength="18">
+        <input name="direccion" id="direccion" type="text" placeholder="Escribe aqui..."  minlength="18">
         <br>
         <label for="telefono">Telefono</label>
-        <input name="telefono" type="number" placeholder="Escribe aqui..." readonly min="000000000" max="999999999">
+        <input name="telefono" id="telefono" type="number" placeholder="Escribe aqui..."  min="000000000" max="999999999">
         <br>
         <label for="hora">Hora</label>
-        <input name="hora" type="datetime" placeholder="Escribe aqui..." required>
+        <input name="hora" id="hora" type="datetime" placeholder="Escribe aqui..." >
     
         <hr>
         <h2>Pedido de pescado: </h2>
@@ -44,15 +44,15 @@
         <h3>¿Numero de raciones?:</h3>
 
         <label>1:</label>
-        <input name="raciones" type="radio" required>
+        <input name="raciones" type="radio" >
         <label>2:</label>
-        <input name="raciones" type="radio" required>
+        <input name="raciones" type="radio" >
         <label>3:</label>
-        <input name="raciones" type="radio" required>
+        <input name="raciones" type="radio" >
         <label>4:</label>
-        <input name="raciones" type="radio" required>
+        <input name="raciones" type="radio" >
         <label>5:</label>
-        <input name="raciones" type="radio" required>
+        <input name="raciones" type="radio" s>
 
         <h3>Acompañamiento:</h3>
         <label>Patatas fritas: </label>
@@ -65,20 +65,24 @@
         <h3>Método de pago:</h3>
         
         <label>Efectivo</label>
-        <input name="pago" type="radio" required>
+        <input name="pago" type="radio" >
         <label>Tarjeta</label>
-        <input name="pago" type="radio" required>
+        <input name="pago" type="radio" >
         <label>PayPal</label>
-        <input name="pago" type="radio" required>
+        <input name="pago" type="radio" >
     
 
         <h3>Instrucciones adicionales:</h3>
-        <input name="instrucciones" type="text" maxlength="180" placeholder="Escriba aqui sus comentarios...">
+        <input name="instrucciones" id="cuenta" type="text" maxlength="180" placeholder="Escriba aqui sus comentarios...">
+        <p>Caracteres escritos: <span id="contador">0</span></p>
         <hr>
         <button id="boton">ENVIA TU PEDIDO!</button>
+        <button id="cambiarFondo">Modo Oscuro</button>
         <footer>Manuel Aljama Muñoz</footer>
- 
+        
     </form>
+
+    
     <script src="ex_html-css-js.js"></script>
 
 </body>
